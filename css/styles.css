@@ -1,0 +1,162 @@
+body{
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.card_container{
+    display: flex;
+    justify-content: center;
+}
+
+.card_text{
+    font-size: 1.2vw;
+}
+
+.card:nth-child(even){
+    width: 20vw;
+    float: left;
+    margin: 1% 1%;
+    background-color: hsl(200,100%,95%);
+    border-radius: 8%;
+    padding: 1%;
+}
+.card:nth-child(odd){
+    width: 20vw;
+    float: left;
+    margin: 1% 1%;
+    background-color: hsla(120, 100%, 40%,0.1);
+    border-radius: 8%;
+    padding: 1%;
+}
+
+.card_heading{
+    text-align: center;
+    color: rgba(0,0,120,0.7);
+    font-size: 2vw;
+}
+
+.clear{
+    clear: both;
+}
+
+.highlight_text{
+    display: inline-block;
+    width: 5%;
+    font-size: 3vw;
+    margin-bottom: -60px;
+    color: rgba(120, 193, 185,1);
+}
+
+.main{
+    margin-left: 1%;
+}
+
+.main_heading{
+    font-size: 4vw;
+    margin-left: 1vw;
+    margin-block-end: 0%;
+    margin-block-start: 0.5%;
+    color: rgb(100, 160, 239,0.9);
+}
+
+.main_text{
+    font-size: 1.2vw;
+    margin-left: 1vw;
+}
+/*
+div.main>h3{
+    font-size: 3em;
+    
+     /*color:hsla(342, 22%, 51%,0.7);
+}*/
+
+.types{
+    left: 5%;
+}
+
+.types:nth-child(odd){
+    padding: 1%;
+    margin: 1% 0;
+    float:left;
+}
+
+.types:nth-child(even){
+    padding: 1%;
+    margin: 1% 0;
+    float: right;
+}
+
+.types:nth-child(odd)>img{
+    float: left;
+    margin-right: 5%;
+}
+
+.types:nth-child(even)>img{
+    float: right;
+    margin-left: 5%;
+}
+
+
+.types_text{
+    font-size: 1.1vw;
+}
+
+.types>img{
+    height: 30vw;
+    width: 40vw;
+}
+
+.types>div>img{
+    height: 26rem;
+    width: 40rem;
+}
+
+.types>div>h3{
+    /*color: hsl(342, 22%, 51%);*/
+    color:rgba(80, 166, 172,0.9);
+    margin-block-end: 0;
+}
+
+div.types>p{
+    width: 75%;
+}
+
+.types>h3{
+    /*color: hsl(342, 22%, 51%);*/
+    color:rgba(80, 166, 172,0.9);
+    margin-block-end: 0;
+}
+
+.footer{
+    background-color: rgba(128,128,128,0.9);
+    font-size: 1.2vw;
+}
+
+.footer>h3{
+    color: white;
+    margin-block-end: 0.5vw;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: center;
+}
+
+.footer>h6{
+    margin-block-end: 0.5vw;
+    margin-block-start: 0.5vw;
+    margin-left: 2vw;
+}
+
+.footer_details{
+    color: aliceblue;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: center;
+}
