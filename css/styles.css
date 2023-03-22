@@ -108,9 +108,12 @@ div.main>h3{
 .types_text{
     font-size: 1.2vw;
 }
+.types_text>p{
+    margin-block-start: 0.5em;
+}
 
 .types>img{
-    height: 30vw;
+    height: 32vw;
     width: 40vw;
 }
 
