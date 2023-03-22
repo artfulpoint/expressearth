@@ -112,6 +112,10 @@ div.main>h3{
     margin-block-start: 0.5em;
 }
 
+.types_text>div>ul{
+    padding-inline-start: 1px;
+}
+
 .types>img{
     height: 32vw;
     width: 40vw;
