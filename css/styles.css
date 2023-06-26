@@ -57,10 +57,12 @@ body{
 
    .frame{
     height: 40em !important;
+    width: 100vw !important;
    }
 
    .logo{
     height: 14em !important;
+    margin: 0 auto !important;
    }
 
     .footer{
