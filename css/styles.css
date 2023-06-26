@@ -4,6 +4,92 @@ body{
     margin-right: auto;
 }
 
+@media screen and (max-width:2500px) {
+    .card_container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    div.card{
+        width: 95%;
+        margin: 10px 20px;
+    }
+
+    .card_text, .main_text, .types_text{
+        font-size: 80px !important;
+    }
+
+    .card_heading{
+        font-size: 100px !important;
+    }
+
+   .search_image{
+    width: 70% !important;
+   }
+
+   .highlight_text{
+    width: 28% !important;
+    font-size: 4vw !important;
+   }
+
+   .list{
+    margin-left: 75px !important;
+   }
+
+   .types>img{
+    clear: both !important;
+    width: 100% !important;
+   }
+
+   .main_heading{
+    font-size: 90px !important;
+    margin-block-start: 4.5% !important;
+
+   }
+
+   .clear{
+    margin-top: 25px !important;
+   }
+
+   .main_text{
+    margin-block-start: 0.5em !important;
+   }
+
+   .frame{
+    height: 40em !important;
+   }
+
+   .logo{
+    height: 14em !important;
+   }
+
+    .footer{
+        height: 40em;
+    }
+
+    .footer_copyright,.footer_heading{
+        font-size: 5em !important;
+        text-align: center;
+    }
+
+    .footer_details{
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .footer_detail{
+        font-size: 2em;
+    }
+}
+
+.frame{
+    width: 100%; height:25vw;
+}
+
+.search_image{
+    margin-left: 10px;width:60%
+}
+
 .logo{
     display: block;
     margin-left: auto;
@@ -20,21 +106,20 @@ body{
     font-size: 1.2vw;
 }
 
-.card:nth-child(even){
+.card{
     width: 20vw;
     float: left;
     margin: 1% 1%;
-    background-color: hsl(200,100%,95%);
     border-radius: 8%;
     padding: 1%;
+    text-align: center;
+}
+
+.card:nth-child(even){
+    background-color: hsl(200,100%,95%);
 }
 .card:nth-child(odd){
-    width: 20vw;
-    float: left;
-    margin: 1% 1%;
     background-color: hsla(120, 100%, 40%,0.1);
-    border-radius: 8%;
-    padding: 1%;
 }
 
 .card_heading{
@@ -167,4 +252,9 @@ div.types>p{
     margin-left: 1vw;
     display: flex;
     justify-content: center;
+}
+
+
+.footer_copyright{
+    color: white;margin-left: 1.5vw;
 }
