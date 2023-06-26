@@ -4,7 +4,7 @@ body{
     margin-right: auto;
 }
 
-@media screen and (max-width:2500px) {
+@media screen and (max-width:425px) {
     .card_container{
         display: flex;
         justify-content: center;
