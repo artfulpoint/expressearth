@@ -57,18 +57,26 @@ header {
 
 .clear {
   clear: both;
+  text-align: center;
 }
 /* .clear img {
   animation: appear 3s ease-in-out 3s infinite;
 } */
 
+.looking {
+  width: 60%;
+  margin-top: 45px;
+}
+
 .highlight_text {
-  display: inline-block;
-  width: 5%;
-  font-size: 3vw;
+  font-size: 2vw;
   margin-bottom: -60px;
   color: rgba(120, 193, 185, 1);
   animation: blink 2s ease-in-out 3s infinite forwards;
+}
+
+.highlight_text > h2 {
+  margin-block-start: 0;
 }
 
 .main {
@@ -187,9 +195,18 @@ div.types > p {
   justify-content: center;
 }
 
+.visible-div {
+  opacity: 1;
+}
+
+.hidden-div {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
 @media screen and (max-width: 710px) and (min-width: 200px) {
   .frame {
-    height:45vw;
+    height: 30vw;
   }
 
   .card_container {
@@ -201,7 +218,7 @@ div.types > p {
   }
   .card:nth-child(even),
   .card:nth-child(odd) {
-    width: 97vw;
+    width: 93vw;
   }
   .card_text,
   .main_text,
@@ -392,5 +409,14 @@ div.types > p {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
