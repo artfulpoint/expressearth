@@ -189,7 +189,7 @@ div.types > p {
 
 @media screen and (max-width: 710px) and (min-width: 200px) {
   .frame {
-    height: 30vw;
+    height:45vw;
   }
 
   .card_container {
