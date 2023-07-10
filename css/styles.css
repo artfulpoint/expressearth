@@ -3,13 +3,16 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
-
+header {
+  position: relative;
+}
 .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  animation: logoAppear 4s 0s linear 1;
+  z-index: 1;
+  animation: logoAppear 6s 0s linear 1;
 }
 
 .card_container {
@@ -29,7 +32,7 @@ body {
   background-color: hsl(200, 100%, 95%);
   border-radius: 8%;
   padding: 1%;
-  animation: fly 10s 0s 1;
+  animation: fly 5s 0s 1;
 }
 .card:nth-child(odd) {
   width: 20vw;
@@ -50,9 +53,9 @@ body {
 .clear {
   clear: both;
 }
-.clear img {
-  animation: appear 3s 0s linear 2;
-}
+/* .clear img {
+  animation: appear 3s ease-in-out 3s infinite;
+} */
 
 .highlight_text {
   display: inline-block;
@@ -60,7 +63,7 @@ body {
   font-size: 3vw;
   margin-bottom: -60px;
   color: rgba(120, 193, 185, 1);
-  animation: blink 3s ease-in-out 3s infinite forwards;
+  animation: blink 2s ease-in-out 3s infinite forwards;
 }
 
 .main {
@@ -92,14 +95,16 @@ div.main>h3{
 }
 
 .types:nth-child(odd) {
+  background-color: hsl(291, 60%, 98%);
   padding: 1%;
-  margin: 1% 0;
+  /* margin: 1% 0; */
   float: left;
 }
 
 .types:nth-child(even) {
+  background-color: hsl(213, 63%, 95%);
   padding: 1%;
-  margin: 1% 0;
+  /* margin: 1% 0; */
   float: right;
 }
 
@@ -207,6 +212,37 @@ div.types > p {
     float: left;
     width: 50%;
   }
+
+  @keyframes cracker {
+    0%,
+    100% {
+      opacity: 0;
+      width: 12px;
+      transform: translate(0px, 0px);
+    }
+    15% {
+      opacity: 1;
+      width: 50px;
+    }
+    30% {
+      opacity: 0.7;
+      width: 70px;
+      transform: translate(50%, 4%);
+    }
+    50% {
+      opacity: 1;
+      width: 12px;
+    }
+    70% {
+      opacity: 0;
+      width: 12px;
+      transform: translate(50%, 4%);
+    }
+    85% {
+      opacity: 0;
+      width: 12px;
+    }
+  }
 }
 
 @keyframes fly {
@@ -230,9 +266,11 @@ div.types > p {
 @keyframes appear {
   0% {
     float: right;
+    opacity: 1;
   }
   100% {
-    float: none;
+    float: left;
+    opacity: 1;
   }
 
   /* 0% {
@@ -263,7 +301,7 @@ div.types > p {
 
 .lightening1 {
   /* display: none; */
-  position: relative;
+  position: absolute;
   background-color: rgba(4, 107, 185, 255);
   height: 5px;
   width: 5px;
@@ -271,14 +309,14 @@ div.types > p {
   transform-origin: 6px 6px;
   border-radius: 50%;
   animation-name: cracker;
-  animation-duration: 3s;
+  animation-duration: 6s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
 }
 .lightening2 {
   /* display: none; */
-  position: relative;
+  position: absolute;
   background-color: rgba(81, 207, 45, 255);
   height: 5px;
   width: 5px;
@@ -286,7 +324,7 @@ div.types > p {
   transform-origin: 6px 6px;
   border-radius: 50%;
   animation-name: cracker;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   animation-delay: 0.5s;
   animation-iteration-count: 1;
@@ -319,7 +357,7 @@ div.types > p {
   30% {
     opacity: 0.7;
     width: 70px;
-    transform: translate(50vw, 30vh);
+    transform: translate(800px, 100px);
   }
   50% {
     opacity: 1;
@@ -328,7 +366,7 @@ div.types > p {
   70% {
     opacity: 0;
     width: 12px;
-    transform: translate(50vw, 30vh);
+    transform: translate(800px, 100px);
   }
   85% {
     opacity: 0;
