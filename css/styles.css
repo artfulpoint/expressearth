@@ -201,7 +201,7 @@ div.types > p {
   }
   .card:nth-child(even),
   .card:nth-child(odd) {
-    width: 93vw;
+    width: 95vw;
   }
   .card_text,
   .main_text,
