@@ -72,7 +72,7 @@ header {
 
 .looking {
   width: 60%;
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 .highlight_text {
@@ -209,11 +209,11 @@ div.types > p {
 
 .visible-div:nth-child(odd) {
   opacity: 1;
-  animation: slide-in 0.2s 0s linear;
+  animation: slide-in 0.5s 0s linear;
 }
 .visible-div:nth-child(even) {
   opacity: 1;
-  animation: slide-out 0.2s 0s linear;
+  animation: slide-out 0.5s 0s linear;
 }
 /* .visible-div {
   opacity: 1;
@@ -230,8 +230,6 @@ div.types > p {
   }
 
   .card_container {
-    margin-left:7px;
-    margin-top:10px;
     flex-direction: column;
   }
 
