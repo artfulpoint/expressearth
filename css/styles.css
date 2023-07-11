@@ -209,11 +209,11 @@ div.types > p {
 
 .visible-div:nth-child(odd) {
   opacity: 1;
-  animation: slide-in 2s 0s linear;
+  animation: slide-in 0.2s 0s linear;
 }
 .visible-div:nth-child(even) {
   opacity: 1;
-  animation: slide-out 2s 0s linear;
+  animation: slide-out 0.2s 0s linear;
 }
 /* .visible-div {
   opacity: 1;
