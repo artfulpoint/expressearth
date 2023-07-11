@@ -207,10 +207,17 @@ div.types > p {
   margin-left: 1.5vw;
 }
 
-.visible-div {
+.visible-div:nth-child(odd) {
   opacity: 1;
-  animation: slide-in 2s 0s linear;
+  animation: slide-in 5s 0s linear;
 }
+.visible-div:nth-child(even) {
+  opacity: 1;
+  animation: slide-out 5s 0s linear;
+}
+/* .visible-div {
+  opacity: 1;
+} */
 
 .hidden-div {
   opacity: 0;
@@ -259,6 +266,15 @@ div.types > p {
   }
   to {
     margin-left: 0%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0%;
   }
 }
 
