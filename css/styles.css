@@ -230,6 +230,8 @@ div.types > p {
   }
 
   .card_container {
+    margin-left: 7px;
+    margin-top: 10px;
     flex-direction: column;
   }
 
